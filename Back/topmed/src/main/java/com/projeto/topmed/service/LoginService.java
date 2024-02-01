@@ -28,9 +28,13 @@ public class LoginService {
 
         ultimoLoginFeito= obterUltimoLoginDoUsuario(usuario.getUsername());
 
-        if(ultimoLoginFeito.getNumeroTentativas().equals(3)){
-            return true;
-        }else{
+        if (ultimoLoginFeito != null) {
+            if (ultimoLoginFeito.getNumeroTentativas().equals(3)) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
             return false;
         }
 

@@ -1,6 +1,7 @@
 package com.projeto.topmed.controller;
 
 import java.time.LocalDateTime;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -50,12 +51,14 @@ public class UsuarioController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestBody String username, String senha) {
+    public ResponseEntity<String> login(@RequestBody Map<String, String> loginRequest) {
+        String username = loginRequest.get("username");
+        String senha = loginRequest.get("senha");
 
         int tentativas=0;
 
         // verifica se os campos foram preenchidos
-        if(username.isEmpty() || senha.isEmpty()){
+        if(username== null || senha  == null){
             return ResponseEntity.status(403).body("Preencha os campos corretamente");
         }
 
