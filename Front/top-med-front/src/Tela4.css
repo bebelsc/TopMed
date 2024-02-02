@@ -18,18 +18,20 @@
 
 .modal-container {
     display: flex;
-  }
+    position: relative;
+}
   
 .modal-verde{
     width: 204px;
     height: 332px;
     top: 121px;
-    left: 764px;
-    border-radius: 0px, 15px, 15px, 0px;
+    left: 268px;
+    border-radius: 0px 15px 15px 0px;
   
     box-shadow: 4px 0px 4px 0px #00000040 inset;
   
     background: #358C84FA;
+    position: relative;
 }
   
 .modal-branco{
@@ -37,20 +39,29 @@
     height: 332px;
     top: 121px;
     left: 470px;
-    border-radius: 11.48px, 11.48px, 11.48px, 11.48px;
+    border-radius: 11.48px;
   
     box-shadow: 3.061890125274658px 3.061890125274658px 3.061890125274658px 3.061890125274658px #00000038;
   
     background: #FFFBFB;
-}
+    position: relative;
+  }
 
 .Tela4-header {
     background-color: #96ABBE;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+
+.teste-requisitos-texto{
+    font-family: Almarai;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 
 .retangulo-vermelho{
@@ -62,7 +73,16 @@
 
     background: #E23A3A54;
 }
-  
+
+.retangulo-vermelho2{
+    width: 206px;
+    height: 28px;
+    top: 250px;
+    left: 513px;
+    border-radius: 2px;
+
+    background: #E23A3A54;
+}
 .retangulo-verde{
     width: 206px;
     height: 28px;
@@ -120,7 +140,7 @@
     letter-spacing: 0em;
     text-align: left;
 
-    background: linear-gradient(0deg, #28625C, #28625C),
+    color: linear-gradient(0deg, #28625C, #28625C),
     linear-gradient(0deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76));
 }
 

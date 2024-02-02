@@ -24,7 +24,7 @@ function Tela4() {
               <img src={vermelho} className="vermelho" alt="vermelho" />
               <p className="texto-vermelho">Câmera não encontrada.</p>
             </div>
-            <div className="retangulo-vermelho">
+            <div className="retangulo-vermelho2">
               <img src={vermelho} className="vermelho" alt="vermelho" />
               <p className="texto-vermelho">Acesso a câmera bloqueado.</p>
             </div>

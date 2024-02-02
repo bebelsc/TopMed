@@ -16,7 +16,7 @@
     height: 332px;
     top: 137px;
     left: 583px;
-    border-radius: 11.48px, 11.48px, 11.48px, 11.48px;
+    border-radius: 11.48px 11.48px 11.48px 11.48px;
     box-shadow: 3.061890125274658px 3.061890125274658px 3.061890125274658px 3.061890125274658px #00000038;
   
     background: #FFFBFB;
@@ -70,8 +70,6 @@
     border-radius: 8.73px;
 
     background: #358C84FA;
-
-    box-shadow: 0px 2.326923131942749px 2.326923131942749px 0px #00000000 inset;
 
     box-shadow: 0px 2.326923131942749px 2.326923131942749px 0px #00000040;
 

@@ -16,10 +16,12 @@ function App() {
       <header className="App-header">
 
         <div className="modal-container">
+
           <div className="modal-branco">
             <p className="bem-vindo-texto">Bem Vindo,</p>
             <p className="faca-login-texto">Faça o login para continuar.</p>
 
+            
             <div className="line-2">
               <img src={Usuario} className="Usuario" alt="Usuario" />
               <p className="usuario-texto">Usuário</p>
@@ -29,17 +31,13 @@ function App() {
               <p className="senha-texto">Senha</p>
             </div>
 
-            <button className="Botao_entrar" onClick={handleClick}>
-              <p className="entrar-texto" onClick={handleClick}>
-                ENTRAR
-              </p>
-            </button>
             <p className="esqueceu-senha-texto" onClick={handleClick}>
               Esqueceu sua senha?
             </p>
 
             <img src={topmed_logo} className="TopMed-logo" alt="topmed_logo" />
             <img src={nextplus_logo} className="nextplus-logo" alt="nextplus_logo" />
+            
           </div>
           <div className="modal-verde">
             <p className="teste-requisitos-texto">Teste de requisitos</p>

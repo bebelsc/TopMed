@@ -26,8 +26,10 @@ function Tela3() {
               </p>
             </button>
 
-            <img src={topmed_logo} className="TopMed-logo" alt="topmed_logo" />
-            <img src={nextplus_logo} className="nextplus-logo" alt="nextplus_logo" />
+            <div  style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+              <img src={topmed_logo} className="TopMed-logo" alt="topmed_logo" style={{ gridColumn: '1',marginRight: '10px' }} />
+              <img src={nextplus_logo} className="nextplus-logo" alt="nextplus_logo" style={{ gridColumn: '2' }} />
+            </div>
           </div>
         </div>
 
