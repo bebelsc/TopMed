@@ -1,0 +1,134 @@
+.Tela2-header {
+    background-color: #96ABBE;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    display: flex;
+}
+
+.modal-branco{
+    width: 284px;
+    height: 332px;
+    top: 137px;
+    left: 583px;
+    border-radius: 11.48px, 11.48px, 11.48px, 11.48px;
+    box-shadow: 3.061890125274658px 3.061890125274658px 3.061890125274658px 3.061890125274658px #00000038;
+  
+    background: #FFFBFB;
+}
+
+.enviar-texto{
+    width: 39px;
+    height: 13px;
+    top: 347px;
+    left: 711px;
+  
+    font-family: Alata;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+  
+    color: #FFFFFF;
+}
+
+.email{
+    width: 19px;
+    height: 19px;
+    top: 292px;
+    left: 630px;  
+}
+
+.line-4{
+    width: 199px;
+    height: 1px;
+    top: 319px;
+    left: 520px;
+    border: 1px;
+    background: #00000038;
+    border: 1px solid #00000038;
+    position: absolute;
+}
+
+.email-texto {
+    width: 33.43px;
+    height: 17.44px;
+    top: 294px;
+    left: 658px;
+  
+    font-family: Alata;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #7C7C7C;
+}
+
+.informe-texto {
+    width: 181px;
+    height: 43px;
+    top: 207px;
+    left: 616px;
+
+    font-family: Alata;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #5C5959;
+}
+
+.esqueceu-senha-texto {
+    width: 208px;
+    height: 26px;
+    top: 181px;
+    left: 616px;
+
+  
+    font-family: Almarai;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  
+    color: #000000;
+}
+
+.botao-enviar {
+    width: 132px;
+    height: 27px;
+    top: 340px;
+    left: 664px;
+    border-radius: 11.22px;
+    
+    color: #3E9F96;
+
+    box-shadow: 0px 2.2439024448394775px 2.2439024448394775px 0px #00000040;
+  
+}
+
+.TopMed-logo{
+    width: 51.68px;
+    height: 13.5px;
+    top: 417px;
+    left: 494px;
+  }
+  
+  .nextplus-logo{
+    width: 35px;
+    height: 24.84px;
+    top: 410.16px;
+    left: 704px;
+  }

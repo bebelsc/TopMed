@@ -1,0 +1,108 @@
+.Tela3-header {
+    background-color: #96ABBE;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    display: flex;
+}
+
+.modal-branco{
+    width: 284px;
+    height: 332px;
+    top: 137px;
+    left: 583px;
+    border-radius: 11.48px, 11.48px, 11.48px, 11.48px;
+    box-shadow: 3.061890125274658px 3.061890125274658px 3.061890125274658px 3.061890125274658px #00000038;
+  
+    background: #FFFBFB;
+}
+
+.enviado-texto{
+    width: 208px;
+    height: 26px;
+    top: 181px;
+    left: 616px;
+  
+    font-family: Almarai;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  
+    color: #000000;
+}
+
+.verifique-texto{
+    width: 191px;
+    height: 43px;
+    top: 207px;
+    left: 616px;
+  
+    font-family: Alata;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+  
+    color: #5C5959;
+}
+
+.carta-imagem{
+    width: 61px;
+    height: 75.41px;
+    top: 268px;
+    left: 688px;
+}
+
+.botao-login{
+    width: 121px;
+    height: 23.85px;
+    top: 371px;
+    left: 664px;
+    border-radius: 8.73px;
+
+    background: #358C84FA;
+
+    box-shadow: 0px 2.326923131942749px 2.326923131942749px 0px #00000000 inset;
+
+    box-shadow: 0px 2.326923131942749px 2.326923131942749px 0px #00000040;
+
+}
+
+.login-texto{
+    width: 27.92px;
+    height: 13.38px;
+    top: 373.33px;
+    left: 710px;
+
+    font-family: Alata;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #FFFFFF
+}
+
+.TopMed-logo{
+    width: 51.68px;
+    height: 13.5px;
+    top: 417px;
+    left: 494px;
+}
+  
+  .nextplus-logo{
+    width: 35px;
+    height: 24.84px;
+    top: 410.16px;
+    left: 704px;
+}

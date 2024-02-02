@@ -1,0 +1,179 @@
+.Tela4 {
+    text-align: center;
+}
+  
+.TopMed-logo{
+    width: 51.68px;
+    height: 13.5px;
+    top: 417px;
+    left: 494px;
+}
+  
+.nextplus-logo{
+    width: 35px;
+    height: 24.84px;
+    top: 410.16px;
+    left: 704px;
+}
+
+.modal-container {
+    display: flex;
+  }
+  
+.modal-verde{
+    width: 204px;
+    height: 332px;
+    top: 121px;
+    left: 764px;
+    border-radius: 0px, 15px, 15px, 0px;
+  
+    box-shadow: 4px 0px 4px 0px #00000040 inset;
+  
+    background: #358C84FA;
+}
+  
+.modal-branco{
+    width: 497px;
+    height: 332px;
+    top: 121px;
+    left: 470px;
+    border-radius: 11.48px, 11.48px, 11.48px, 11.48px;
+  
+    box-shadow: 3.061890125274658px 3.061890125274658px 3.061890125274658px 3.061890125274658px #00000038;
+  
+    background: #FFFBFB;
+}
+
+.Tela4-header {
+    background-color: #96ABBE;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.retangulo-vermelho{
+    width: 206px;
+    height: 28px;
+    top: 214px;
+    left: 513px;
+    border-radius: 2px;
+
+    background: #E23A3A54;
+}
+  
+.retangulo-verde{
+    width: 206px;
+    height: 28px;
+    top: 286px;
+    left: 513px;
+    border-radius: 2px;
+
+    background: #3E9F9663;
+}
+
+.icone-vermelho{
+    width: 15px;
+    height: 15px;
+    top: 221px;
+    left: 522px;
+
+    background: #991616;
+}
+
+.icone-verde{
+    width: 14.55px;
+    height: 12px;
+    top: 295px;
+    left: 522px;
+
+    background: #28625C;
+}
+
+.texto-vermelho{
+    width: 128px;
+    height: 13px;
+    top: 222px;
+    left: 545px;
+
+    font-family: Almarai;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #991616;
+}
+
+.texto-verde{
+    width: 111px;
+    height: 15px;
+    top: 293px;
+    left: 548px;
+
+    font-family: Almarai;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    background: linear-gradient(0deg, #28625C, #28625C),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76));
+}
+
+.camera{
+    width: 15.1px;
+    height: 15.1px;
+    top: 214.03px;
+    left: 788.87px;
+}
+
+.camera-texto{
+    width: 53px;
+    height: 16px;
+    top: 214px;
+    left: 816px;
+}
+
+.imagem{
+    width: 163.94px;
+    height: 109.3px;
+    top: 260px;
+    left: 783px;
+}
+
+.botao-concluido{
+    width: 132px;
+    height: 27px;
+    top: 399px;
+    left: 799px;
+    border-radius: 11.22px;
+    border: 1px;
+
+    background: linear-gradient(0deg, #358C84, #358C84),
+    linear-gradient(0deg, #FFFBFB, #FFFBFB);
+
+    border: 1px solid #358C84;
+    box-shadow: 0px 2.2439024448394775px 2.2439024448394775px 0px #00000040;
+
+}
+
+.botao-texto{
+    width: 49px;
+    height: 12px;
+    top: 405px;
+    left: 840px;
+
+    font-family: Alata;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #284F72;
+}
+
