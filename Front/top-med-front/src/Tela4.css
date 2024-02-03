@@ -5,14 +5,14 @@
 .TopMed-logo{
     width: 51.68px;
     height: 13.5px;
-    top: 417px;
-    left: 494px;
+    margin-top: 50px;
+    margin-left: 10px;
 }
   
 .nextplus-logo{
     width: 35px;
     height: 24.84px;
-    top: 410.16px;
+    margin-top: 45px;
     left: 704px;
 }
 
@@ -61,69 +61,153 @@
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
-
+    margin-left: 30px;
 }
 
-.retangulo-vermelho{
+.retangulo-vermelho {
     width: 206px;
     height: 28px;
     top: 214px;
     left: 513px;
     border-radius: 2px;
-
     background: #E23A3A54;
 }
 
-.retangulo-vermelho2{
+.retangulo-vermelho2 {
     width: 206px;
     height: 28px;
-    top: 250px;
+    top: 252px; /* Ajuste a posição vertical */
     left: 513px;
     border-radius: 2px;
-
     background: #E23A3A54;
 }
-.retangulo-verde{
+
+.retangulo-vermelho3 {
     width: 206px;
     height: 28px;
-    top: 286px;
+    top: 290px; /* Ajuste a posição vertical */
     left: 513px;
     border-radius: 2px;
+    background: #E23A3A54;
+}
 
+.retangulo-verde {
+    width: 206px;
+    height: 28px;
+    top: 328px; /* Ajuste a posição vertical */
+    left: 513px;
+    border-radius: 2px;
     background: #3E9F9663;
 }
 
-.icone-vermelho{
+.retangulo-verde2 {
+    width: 206px;
+    height: 28px;
+    top: 366px; /* Ajuste a posição vertical */
+    left: 513px;
+    border-radius: 2px;
+    background: #3E9F9663;
+}
+
+.retangulo-verde3 {
+    width: 206px;
+    height: 28px;
+    top: 404px; /* Ajuste a posição vertical */
+    left: 513px;
+    border-radius: 2px;
+    background: #3E9F9663;
+}
+
+.icone-vermelho {
     width: 15px;
     height: 15px;
-    top: 221px;
-    left: 522px;
-
-    background: #991616;
+    top: 217px; /* Ajuste a posição vertical para alinhar com o retângulo */
+    margin-left: -170px;
+    margin-top: 5px;
+    color: #991616;
+}
+.icone-vermelho2 {
+    width: 15px;
+    height: 15px;
+    top: 255px;
+    margin-left: -170px;
+    margin-top: 5px;
+    color: #991616;
+}
+.icone-vermelho3 {
+    width: 15px;
+    height: 15px;
+    top: 293px;
+    margin-left: -170px;
+    margin-top: 5px;
+    color: #991616;
 }
 
-.icone-verde{
+.icone-verde {
     width: 14.55px;
     height: 12px;
-    top: 295px;
-    left: 522px;
-
-    background: #28625C;
+    top: 293px;
+    margin-left: -170px;
+    margin-top: 5px;
+    color: #28625C;
 }
 
-.texto-vermelho{
+.icone-verde2 {
+    width: 14.55px;
+    height: 12px;
+    top: 331px;
+    margin-left: -170px;
+    margin-top: 5px;
+    color: #28625C;
+}
+
+.icone-verde3 {
+    width: 14.55px;
+    height: 12px;
+    top: 407px;
+    margin-left: -170px;
+    margin-top: 5px;
+    color: #28625C;
+}
+
+.texto-vermelho {
     width: 128px;
     height: 13px;
-    top: 222px;
     left: 545px;
-
     font-family: Almarai;
     font-size: 12px;
     font-weight: 400;
     line-height: 13px;
     letter-spacing: 0em;
     text-align: left;
+    color: #991616;
+}
 
+.texto-vermelho2 {
+    width: 128px;
+    height: 13px;
+    top: 255px; /* Ajuste a posição vertical para alinhar com o retângulo e o ícone */
+    left: 545px;
+    font-family: Almarai;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #991616;
+}
+
+.texto-vermelho3 {
+    width: 128px;
+    height: 13px;
+    top: 293px; /* Ajuste a posição vertical para alinhar com o retângulo e o ícone */
+    left: 545px;
+    font-family: Almarai;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
     color: #991616;
 }
 
@@ -147,34 +231,40 @@
 .camera{
     width: 15.1px;
     height: 15.1px;
-    top: 214.03px;
-    left: 788.87px;
+    margin-top: 10.03px;
+    margin-left: -150px;
+
 }
 
 .camera-texto{
     width: 53px;
     height: 16px;
-    top: 214px;
+    margin-left: 30px;
     left: 816px;
+    color: #FFFBFB;
+    font-family: Alata;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
 }
 
 .imagem{
     width: 163.94px;
     height: 109.3px;
-    top: 260px;
+    margin-top: 30px;
     left: 783px;
 }
 
 .botao-concluido{
     width: 132px;
     height: 27px;
-    top: 399px;
+    margin-top: 10px;
     left: 799px;
     border-radius: 11.22px;
     border: 1px;
 
-    background: linear-gradient(0deg, #358C84, #358C84),
-    linear-gradient(0deg, #FFFBFB, #FFFBFB);
+    background: #FFFBFB;
 
     border: 1px solid #358C84;
     box-shadow: 0px 2.2439024448394775px 2.2439024448394775px 0px #00000040;
@@ -197,3 +287,13 @@
     color: #284F72;
 }
 
+/* Adicione o espaçamento vertical */
+.retangulo-vermelho,
+.retangulo-vermelho2,
+.retangulo-vermelho3,
+.retangulo-verde,
+.retangulo-verde2,
+.retangulo-verde3 {
+    margin-top: 5px;
+    margin-left: 45px;
+}

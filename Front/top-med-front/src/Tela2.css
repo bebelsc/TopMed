@@ -21,22 +21,21 @@
   }
   
   .esqueceu-senha-texto {
-    font-family: Almarai;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 22px;
     color: #000000;
-    position: inherit;
-
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
   
   .informe-texto {
-    font-family: Alata;
+    width: 181px;
+    height: 43px;
     font-size: 10px;
-    font-weight: 400;
-    line-height: 14px;
     letter-spacing: 0em;
     color: #5C5959;
+    margin-left: 30px;
+    
   }
   
   .line-4 {
@@ -44,17 +43,21 @@
     border: 1px;
     color: #00000038;
     border: 1px solid #00000038;
+    margin-left: 40px;
   }
   
   .email {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+    margin-left: 40px;
   }
   
   .email-texto {
-    width: 39px;
-    height: 13px;
+    font-size: 11px;
+    letter-spacing: 0em;
+    margin-left: 55px;
+    margin-bottom: 2px;
     color: #7C7C7C;
   }
   
@@ -63,7 +66,7 @@
     border: none;
     margin-top: 20px;
     cursor: pointer;
-
+    margin-left: 80px;
     width: 132px;
     height: 27px;
     border-radius: 11.22px;
@@ -71,23 +74,24 @@
   }
   
   .enviar-texto {
-    font-family: Alata;
     font-size: 10px;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0em;
     color: #FFFFFF;
+    margin-top: 4px;
   }
   
   .TopMed-logo {
     margin-top: 20px;
     width: 51.68px;
     height: 13.5px;
-    top: 433px;
-    
+    margin-top: 75px;
+    margin-left: 15px;
   }
   
   .nextplus-logo {
-    margin-top: 10px;
+    margin-top: 65px;
+    margin-left: 75px;
   }
   

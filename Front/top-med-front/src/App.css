@@ -1,27 +1,17 @@
 .bem-vindo-texto{
   position: absolute;
-  width: 115.84px;
-  height: 29.09px;
   top: 30px;
   left: 29.09px;
-  font-family: Almarai;
   font-size: 22px;
   font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0em;
   text-align: left;
-  z-index: 2;
   color: #000000;
 }
 
 .faca-login-texto{
   position: absolute;
-  width: 160px;
-  height: 14.08px;
-  top: 70.8px;
+  top: 65px;
   left: 30px;
-
-  font-family: Alata;
   font-size: 12px;
   font-weight: 400;
   line-height: 17px;
@@ -34,8 +24,8 @@
 .Usuario{
   width: 16px;
   height: 16px;
-  top: 260px;
-  left: 525px;
+  margin-top: 130px;
+  margin-left: 65px;
   padding: 2px;
 }
 
@@ -43,13 +33,10 @@
   color: #7C7C7C;
   width: 42.15px;
   height: 17.44px;
-  top: 10px;
-  left: 548px;
-  font-family: Alata;
+  margin-top: 130px;
+
   font-size: 11px;
-  font-weight: 400;
   line-height: 15px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
@@ -71,20 +58,17 @@
   height: 16px;
   top: 298px;
   left: 527px;
-
-  background: #0000005E;
+  color: #0000005E;
 }
 
 .senha-texto {
   color: #7C7C7C;
   width: 33.43px;
   height: 17.44px;
-  top: 298px;
-  left: 548px;
+  margin-top: 10px;
+  margin-left: 55px;
 
-  font-family: Alata;
   font-size: 11px;
-  font-weight: 400;
   line-height: 15px;
   letter-spacing: 0em;
   text-align: left;
@@ -106,52 +90,33 @@
 .Botao_entrar {
   width: 132px;
   height: 27px;
-  top: 340px;
-  left: 554px;
+  margin-left: 95px;
   border-radius: 11.22px;
 
   background: #3E9F96;
-
-  box-shadow: 0px 2.2439024448394775px 2.2439024448394775px 0px #00000040;
-
 }
 
 .entrar-texto {
-  width: 40.39px;
-  height: 13.46px;
-  top: 346px;
-  left: 600px;
-
-
-  font-family: Alata;
   font-size: 11px;
   font-weight: 400;
   line-height: 15px;
-  letter-spacing: 0em;
-  text-align: left;
-
-
+  text-align: center;
+  margin-top: 2px;
   color: #FFFFFF;
 }
-
-
 
 .TopMed-logo{
   width: 51.68px;
   height: 13.5px;
-  top: 800px;
-  left: 300px;
+  margin-top: 35px;
+  margin-left: 15px;
 }
 
 .nextplus-logo{
   width: 35px;
   height: 24.84px;
-  top: 410.16px;
+  margin-top: 30px;
   left: 704px;
-}
-
-.App {
-  text-align: center;
 }
 
 .App-logo {
@@ -160,33 +125,22 @@
 }
 
 .realizar-teste-texto {
-  width: 67px;
-  height: 13px;
-  top: 349px;
-  left: 834px;
-
-  font-family: Alata;
   font-size: 11px;
   font-weight: 400;
   line-height: 15px;
-  letter-spacing: 0em;
-  text-align: left;
+  margin-top: 2px;
+  text-align: center;
 
   color: #284F72;
 
 }
 
 .teste-acessos-texto {
-  width: 167px;
+  width: 181px;
   height: 27px;
   top: 217px;
-  left: 790px;
-
-  font-family: Alata;
+  margin-left: 15px;
   font-size: 10px;
-  font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 0em;
   text-align: left;
 
   color:  #FFFFFFAD;
@@ -194,18 +148,13 @@
 
 
 .teste-requisitos-texto{
-  width: 85px;
-  height: 38px;
-  top: 168px;
-  left: 789px;
-
-  font-family: Almarai;
+  width: 100px;
+  margin-top: 35px;
+  margin-left: 20px;
   font-size: 20px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0em;
   text-align: left;
-
   color: #FFFBFB;
 }
 
@@ -243,26 +192,25 @@
 .ondas{
   width: 126px;
   height: 27.53px;
-  top: 280px;
-  left: 790px;
+  margin-left: 20px;
+  background-color: #358C84FA;
 }
 
 .camera{
   width: 31px;
   height: 31px;
-  top: 276px;
-  left: 922px;
+  margin-left: 5px;
 
 }
 
 .Botao_teste {
   width: 132px;
   height: 27px;
-  top: 344px;
-  left: 802px;
+  margin-top: 50px;
+  margin-left: 50px;
   border-radius: 11.22px;
   
-  color: #FFFBFB;
+  background: #FFFBFB;
 
   box-shadow: 0px 2.2439024448394775px 2.2439024448394775px 0px #00000040;
 
@@ -276,15 +224,8 @@
 }
 
 .esqueceu-senha-texto {
-  width: 102.5px;
-  height: 110px;
-  bottom: 1110px;
   left: 300px;
-  font-family: Comfortaa;
   font-size: 9px;
-  font-weight: 400;
-
-  letter-spacing: 0em;
-  z-index: 1;
+  margin-left: 100px;
   color: #284F72;
 }

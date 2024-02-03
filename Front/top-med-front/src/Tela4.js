@@ -21,33 +21,35 @@ function Tela4() {
             
 
             <div className="retangulo-vermelho">
-              <img src={vermelho} className="vermelho" alt="vermelho" />
+              <img src={vermelho} className="icone-vermelho" alt="vermelho" />
               <p className="texto-vermelho">Câmera não encontrada.</p>
             </div>
             <div className="retangulo-vermelho2">
-              <img src={vermelho} className="vermelho" alt="vermelho" />
-              <p className="texto-vermelho">Acesso a câmera bloqueado.</p>
+              <img src={vermelho} className="icone-vermelho2" alt="vermelho" />
+              <p className="texto-vermelho2">Acesso a câmera bloqueado.</p>
             </div>
             <div className="retangulo-verde">
-              <img src={verde} className="verde" alt="verde" />
+              <img src={verde} className="icone-verde" alt="verde" />
               <p className="texto-verde">Microfone disponível.</p>
             </div>
-            <div className="retangulo-verde">
-              <img src={verde} className="verde" alt="verde" />
+            <div className="retangulo-verde2">
+              <img src={verde} className="icone-verde2" alt="verde" />
               <p className="texto-verde">Acesso ao microfone disponível.</p>
             </div>
-            <div className="retangulo-vermelho">
-              <img src={vermelho} className="vermelho" alt="vermelho" />
-              <p className="texto-vermelho">Navegador não compatível - Favor utilizar o Google Chrome</p>
+            <div className="retangulo-vermelho3">
+              <img src={vermelho} className="icone-vermelho3" alt="vermelho" />
+              <p className="texto-vermelho3">Navegador não compatível - Favor utilizar o Google Chrome</p>
             </div>
-            <div className="retangulo-verde">
-              <img src={verde} className="verde" alt="verde" />
+            <div className="retangulo-verde3">
+              <img src={verde} className="icone-verde3" alt="verde" />
               <p className="texto-verde">Velocidade da internet suficiente.</p>
             </div>
 
 
-            <img src={topmed_logo} className="TopMed-logo" alt="topmed_logo" />
-            <img src={nextplus_logo} className="nextplus-logo" alt="nextplus_logo" />
+            <div  style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+              <img src={topmed_logo} className="TopMed-logo" alt="topmed_logo" style={{ gridColumn: '1',marginRight: '10px' }} />
+              <img src={nextplus_logo} className="nextplus-logo" alt="nextplus_logo" style={{ gridColumn: '2' }} />
+            </div>
           </div>
           <div className="modal-verde">
 
