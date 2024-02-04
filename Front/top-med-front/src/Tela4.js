@@ -12,40 +12,51 @@ function Tela4() {
   };
 
   return (
-    <div className="Tela4">
       <header className="Tela4-header">
 
         <div className="modal-container">
           <div className="modal-branco">
-            <p className="teste-requisitos-texto">Teste de requisitos técnicos</p>
+
+            <div class="row">
+              <p className="teste-requisitos-texto">Teste de requisitos técnicos</p>
+            </div>
+            <div class="row">
+              <div className="retangulo-vermelho">
+                <img src={vermelho} className="icone-vermelho" alt="vermelho" />
+                <p className="texto-vermelho">Câmera não encontrada.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div className="retangulo-vermelho2">
+                <img src={vermelho} className="icone-vermelho" alt="vermelho" />
+                <p className="texto-vermelho">Acesso a câmera bloqueado.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div className="retangulo-verde">
+                <img src={verde} className="icone-verde" alt="verde" />
+                <p className="texto-verde">Microfone disponível.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div className="retangulo-verde2">
+                <img src={verde} className="icone-verde" alt="verde" />
+                <p className="texto-verde">Acesso ao microfone disponível.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div className="retangulo-vermelho3">
+                <img src={vermelho} className="icone-vermelho" alt="vermelho" />
+                <p className="texto-vermelho">Navegador não compatível - Favor utilizar o Google Chrome</p>
+              </div>
+            </div>
+            <div class="row">
+              <div className="retangulo-verde3">
+                <img src={verde} className="icone-verde" alt="verde" />
+                <p className="texto-verde">Velocidade da internet suficiente.</p>
+              </div>
+            </div>
             
-
-            <div className="retangulo-vermelho">
-              <img src={vermelho} className="icone-vermelho" alt="vermelho" />
-              <p className="texto-vermelho">Câmera não encontrada.</p>
-            </div>
-            <div className="retangulo-vermelho2">
-              <img src={vermelho} className="icone-vermelho2" alt="vermelho" />
-              <p className="texto-vermelho2">Acesso a câmera bloqueado.</p>
-            </div>
-            <div className="retangulo-verde">
-              <img src={verde} className="icone-verde" alt="verde" />
-              <p className="texto-verde">Microfone disponível.</p>
-            </div>
-            <div className="retangulo-verde2">
-              <img src={verde} className="icone-verde2" alt="verde" />
-              <p className="texto-verde">Acesso ao microfone disponível.</p>
-            </div>
-            <div className="retangulo-vermelho3">
-              <img src={vermelho} className="icone-vermelho3" alt="vermelho" />
-              <p className="texto-vermelho3">Navegador não compatível - Favor utilizar o Google Chrome</p>
-            </div>
-            <div className="retangulo-verde3">
-              <img src={verde} className="icone-verde3" alt="verde" />
-              <p className="texto-verde">Velocidade da internet suficiente.</p>
-            </div>
-
-
             <div  style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
               <img src={topmed_logo} className="TopMed-logo" alt="topmed_logo" style={{ gridColumn: '1',marginRight: '10px' }} />
               <img src={nextplus_logo} className="nextplus-logo" alt="nextplus_logo" style={{ gridColumn: '2' }} />
@@ -53,22 +64,24 @@ function Tela4() {
           </div>
           <div className="modal-verde">
 
-            <img src={camera} className="camera" alt="camera" />
-            <p className="camera-texto">Câmera</p>
-
-
-            <img src={imagem} className="imagem" alt="imagem" />
-            
-            <button className="botao-concluido" onClick={handleClick}>
-              <p className="botao-texto" onClick={handleClick}>
-                Concluido
-              </p>
-            </button>
+            <div class="row">
+              <img src={camera} className="camera" alt="camera" />
+              <p className="camera-texto">Câmera</p>
+            </div>
+            <div class="row">
+              <img src={imagem} className="imagem" alt="imagem" />
+            </div>
+            <div class="row">
+              <button className="botao-concluido" onClick={handleClick}>
+                <p className="botao-texto" onClick={handleClick}>
+                  Concluido
+                </p>
+              </button>
+            </div>
           </div>
         </div>
 
       </header>
-    </div>
   );
 }
 

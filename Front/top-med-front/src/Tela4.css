@@ -5,15 +5,15 @@
 .TopMed-logo{
     width: 51.68px;
     height: 13.5px;
-    margin-top: 50px;
-    margin-left: 10px;
+    margin-top: 60px;
+    margin-left: 15px;
 }
   
 .nextplus-logo{
     width: 35px;
     height: 24.84px;
-    margin-top: 45px;
-    left: 704px;
+    margin-top: 55px;
+    margin-right: 10px;
 }
 
 .modal-container {
@@ -23,7 +23,7 @@
   
 .modal-verde{
     width: 204px;
-    height: 332px;
+    height: 406px;
     top: 121px;
     left: 268px;
     border-radius: 0px 15px 15px 0px;
@@ -35,8 +35,8 @@
 }
   
 .modal-branco{
-    width: 497px;
-    height: 332px;
+    width: 498px;
+    height: 406px;
     top: 121px;
     left: 470px;
     border-radius: 11.48px;
@@ -55,26 +55,32 @@
 }
 
 .teste-requisitos-texto{
-    font-family: Almarai;
+
+    width: 208px;
+
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
     margin-left: 30px;
+    margin-top: 30px;
 }
 
 .retangulo-vermelho {
-    width: 206px;
+    display: flex; /* Adiciona display flex para colocar os itens na mesma linha */
+    align-items: center;
+    width: 215px;
     height: 28px;
-    top: 214px;
     left: 513px;
     border-radius: 2px;
     background: #E23A3A54;
 }
 
 .retangulo-vermelho2 {
-    width: 206px;
+    display: flex; /* Adiciona display flex para colocar os itens na mesma linha */
+    align-items: center;
+    width: 215px;
     height: 28px;
     top: 252px; /* Ajuste a posição vertical */
     left: 513px;
@@ -83,16 +89,18 @@
 }
 
 .retangulo-vermelho3 {
-    width: 206px;
-    height: 28px;
-    top: 290px; /* Ajuste a posição vertical */
-    left: 513px;
+    display: flex; /* Adiciona display flex para colocar os itens na mesma linha */
+    align-items: center;
+    width: 215px;
+    height: 40px;
     border-radius: 2px;
     background: #E23A3A54;
 }
 
 .retangulo-verde {
-    width: 206px;
+    display: flex; /* Adiciona display flex para colocar os itens na mesma linha */
+    align-items: center;
+    width: 215px;
     height: 28px;
     top: 328px; /* Ajuste a posição vertical */
     left: 513px;
@@ -101,7 +109,9 @@
 }
 
 .retangulo-verde2 {
-    width: 206px;
+    display: flex; /* Adiciona display flex para colocar os itens na mesma linha */
+    align-items: center;
+    width: 215px;
     height: 28px;
     top: 366px; /* Ajuste a posição vertical */
     left: 513px;
@@ -110,8 +120,10 @@
 }
 
 .retangulo-verde3 {
-    width: 206px;
-    height: 28px;
+    display: flex; /* Adiciona display flex para colocar os itens na mesma linha */
+    align-items: center;
+    width: 215px;
+    height: 45px;
     top: 404px; /* Ajuste a posição vertical */
     left: 513px;
     border-radius: 2px;
@@ -122,87 +134,24 @@
     width: 15px;
     height: 15px;
     top: 217px; /* Ajuste a posição vertical para alinhar com o retângulo */
-    margin-left: -170px;
-    margin-top: 5px;
+
+
     color: #991616;
 }
-.icone-vermelho2 {
-    width: 15px;
-    height: 15px;
-    top: 255px;
-    margin-left: -170px;
-    margin-top: 5px;
-    color: #991616;
-}
-.icone-vermelho3 {
-    width: 15px;
-    height: 15px;
-    top: 293px;
-    margin-left: -170px;
-    margin-top: 5px;
-    color: #991616;
-}
+
 
 .icone-verde {
     width: 14.55px;
     height: 12px;
     top: 293px;
-    margin-left: -170px;
-    margin-top: 5px;
-    color: #28625C;
-}
-
-.icone-verde2 {
-    width: 14.55px;
-    height: 12px;
-    top: 331px;
-    margin-left: -170px;
-    margin-top: 5px;
-    color: #28625C;
-}
-
-.icone-verde3 {
-    width: 14.55px;
-    height: 12px;
-    top: 407px;
-    margin-left: -170px;
-    margin-top: 5px;
     color: #28625C;
 }
 
 .texto-vermelho {
-    width: 128px;
+    width: 310px;
     height: 13px;
-    left: 545px;
-    font-family: Almarai;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 13px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #991616;
-}
-
-.texto-vermelho2 {
-    width: 128px;
-    height: 13px;
-    top: 255px; /* Ajuste a posição vertical para alinhar com o retângulo e o ícone */
-    left: 545px;
-    font-family: Almarai;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 13px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #991616;
-}
-
-.texto-vermelho3 {
-    width: 128px;
-    height: 13px;
-    top: 293px; /* Ajuste a posição vertical para alinhar com o retângulo e o ícone */
-    left: 545px;
-    font-family: Almarai;
+    margin-top: 15px;
+    margin-left: 5px;
     font-size: 12px;
     font-weight: 400;
     line-height: 13px;
@@ -212,47 +161,40 @@
 }
 
 .texto-verde{
-    width: 111px;
+    width: 205px;
     height: 15px;
-    top: 293px;
-    left: 548px;
-
-    font-family: Almarai;
     font-size: 12px;
     font-weight: 400;
     line-height: 13px;
     letter-spacing: 0em;
     text-align: left;
-
-    color: linear-gradient(0deg, #28625C, #28625C),
-    linear-gradient(0deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76));
+    margin-top: 20px;
+    margin-left: 5px;
+    color: #28625C;
 }
 
 .camera{
-    width: 15.1px;
-    height: 15.1px;
-    margin-top: 10.03px;
-    margin-left: -150px;
+    width: 60px;
+    height: 40px;
+    margin-top: 90px;
+    margin-left: 15px;
 
 }
 
 .camera-texto{
     width: 53px;
     height: 16px;
-    margin-left: 30px;
-    left: 816px;
     color: #FFFBFB;
-    font-family: Alata;
     font-size: 12px;
     font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
+    margin-top: 100px;
 }
 
 .imagem{
-    width: 163.94px;
+    width: 180px;
     height: 109.3px;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
     left: 783px;
 }
 
@@ -260,6 +202,7 @@
     width: 132px;
     height: 27px;
     margin-top: 10px;
+    margin-left: 50px;
     left: 799px;
     border-radius: 11.22px;
     border: 1px;
@@ -274,10 +217,8 @@
 .botao-texto{
     width: 49px;
     height: 12px;
-    top: 405px;
-    left: 840px;
-
-    font-family: Alata;
+    margin-top: 5px;
+    margin-left: 30px;
     font-size: 11px;
     font-weight: 400;
     line-height: 15px;

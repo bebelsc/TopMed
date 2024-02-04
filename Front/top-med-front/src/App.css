@@ -43,7 +43,7 @@
 .line-4{
   width: 199px;
   height: 1px;
-  top: 190px;
+  margin-top: 0px;
   left: 50px;
   border: 1px;
   background: #00000038;
@@ -56,22 +56,9 @@
 .Senha{
   width: 12px;
   height: 16px;
-  top: 298px;
-  left: 527px;
-  color: #0000005E;
-}
-
-.senha-texto {
-  color: #7C7C7C;
-  width: 33.43px;
-  height: 17.44px;
   margin-top: 10px;
-  margin-left: 55px;
-
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-align: left;
+  margin-left: 65px;
+  color: #0000005E;
 }
 
 .line-2{
@@ -227,5 +214,17 @@
   left: 300px;
   font-size: 9px;
   margin-left: 100px;
+  margin-top: 10px;
   color: #284F72;
 }
+
+.Usuario-input, .Senha-input {
+  width: 150px; /* Defina a largura desejada */
+  margin-left: 10px; /* Adicione margem à esquerda para espaçamento */
+  border: none; /* Remover borda */
+  outline: none; /* Remover contorno ao focar */
+  caret-color: transparent; /* Remove o cursor */
+  margin-left: 90px;
+  margin-top: -20px;
+}
+

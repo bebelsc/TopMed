@@ -9,23 +9,25 @@ function Tela3() {
   };
 
   return (
-    <div className="Tela3">
       <header className="Tela3-header">
-
         <div className="modal-container">
           <div className="modal-branco">
-           
-           <p className="enviado-texto">E-mail enviado!</p>
-           <p className="verifique-texto">Verifique sua caixa de entrada e acesso o link para redefinição de senha.</p>
-
-           <img src={carta} className="carta" alt="carta" />
-
-            <button className="botao-login" onClick={handleClick}>
-              <p className="login-texto" onClick={handleClick}>
-                Login
-              </p>
-            </button>
-
+            <div class="row">
+              <p className="enviado-texto">E-mail enviado!</p>
+            </div>
+            <div class="row">
+              <p className="verifique-texto">Verifique sua caixa de entrada e acesso o link para redefinição de senha.</p>
+            </div>
+            <div class="row">
+              <img src={carta} className="carta-imagem" alt="carta" />
+            </div>
+            <div class="row">
+              <button className="botao-login" onClick={handleClick}>
+                <p className="login-texto" onClick={handleClick}>
+                  Login
+                </p>
+              </button>
+            </div>
             <div  style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
               <img src={topmed_logo} className="TopMed-logo" alt="topmed_logo" style={{ gridColumn: '1',marginRight: '10px' }} />
               <img src={nextplus_logo} className="nextplus-logo" alt="nextplus_logo" style={{ gridColumn: '2' }} />
@@ -34,7 +36,6 @@ function Tela3() {
         </div>
 
       </header>
-    </div>
   );
 }
 

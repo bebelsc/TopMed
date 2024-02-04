@@ -18,55 +18,43 @@
     left: 583px;
     border-radius: 11.48px 11.48px 11.48px 11.48px;
     box-shadow: 3.061890125274658px 3.061890125274658px 3.061890125274658px 3.061890125274658px #00000038;
-  
     background: #FFFBFB;
 }
 
 .enviado-texto{
-    width: 208px;
-    height: 26px;
-    top: 181px;
-    left: 616px;
-  
-    font-family: Almarai;
+    margin-left: 30px;
+    margin-top: 30px;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 22px;
+    font-weight: 450;
     letter-spacing: 0em;
     text-align: left;
-
-  
     color: #000000;
 }
 
 .verifique-texto{
-    width: 191px;
+    width: 205px;
     height: 43px;
-    top: 207px;
-    left: 616px;
-  
-    font-family: Alata;
+    margin-top: -15px;
+    margin-left: 30px;
     font-size: 10px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0em;
+    font-weight: 480;
     text-align: left;
   
     color: #5C5959;
 }
 
 .carta-imagem{
-    width: 61px;
-    height: 75.41px;
-    top: 268px;
-    left: 688px;
+    width: 85px;
+    height: 79px;
+    margin-top: -5px;
+    margin-left: 105px;
 }
 
 .botao-login{
     width: 121px;
     height: 23.85px;
-    top: 371px;
-    left: 664px;
+    margin-top: 20px;
+    margin-left: 90px;
     border-radius: 8.73px;
 
     background: #358C84FA;
@@ -79,14 +67,12 @@
     width: 27.92px;
     height: 13.38px;
     top: 373.33px;
-    left: 710px;
-
-    font-family: Alata;
+    margin-left: 30px;
     font-size: 11px;
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
 
     color: #FFFFFF
 }
@@ -94,13 +80,13 @@
 .TopMed-logo{
     width: 51.68px;
     height: 13.5px;
-    top: 417px;
-    left: 494px;
+    margin-top: 65px;
+    margin-left: 15px;
 }
   
   .nextplus-logo{
     width: 35px;
     height: 24.84px;
-    top: 410.16px;
-    left: 704px;
+    margin-top: 55px;
+    margin-left: 75px;
 }
