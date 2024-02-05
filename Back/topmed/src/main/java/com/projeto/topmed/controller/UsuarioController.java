@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -41,6 +42,7 @@ public class UsuarioController {
     @PostMapping("/cadastrar")
     public ResponseEntity<String> cadastrarUsuario(@RequestBody Usuario usuario) {
 
+       try {
         Usuario usuarioNovo = new Usuario();
         
         usuarioNovo.setNomeUsuario(usuario.getNomeUsuario());
@@ -52,6 +54,9 @@ public class UsuarioController {
         Usuario usuarioCriado = usuarioService.adicionarUsuario(usuarioNovo);
 
         return ResponseEntity.ok("Usuario adicionado com sucesso. ID: " + usuarioCriado.getId());
+    } catch (Exception ex) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Erro ao cadastrar usuário: " + ex.getMessage());
+    }
     }
 
     @PostMapping("/login")
