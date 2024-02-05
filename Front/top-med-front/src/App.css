@@ -44,7 +44,7 @@
   width: 199px;
   height: 1px;
   margin-top: 0px;
-  left: 50px;
+  margin-left: 65px;
   border: 1px;
   background: #00000038;
   border: 1px solid #00000038;
@@ -77,6 +77,7 @@
 .Botao_entrar {
   width: 132px;
   height: 27px;
+  margin-top: 20px;
   margin-left: 95px;
   border-radius: 11.22px;
 
@@ -100,10 +101,9 @@
 }
 
 .nextplus-logo{
-  width: 35px;
+  width: 65px;
   height: 24.84px;
-  margin-top: 30px;
-  left: 704px;
+  margin-top: 10px;
 }
 
 .App-logo {
@@ -214,16 +214,16 @@
   left: 300px;
   font-size: 9px;
   margin-left: 100px;
-  margin-top: 10px;
+  margin-top: 15px;
   color: #284F72;
 }
 
 .Usuario-input, .Senha-input {
-  width: 150px; /* Defina a largura desejada */
-  margin-left: 10px; /* Adicione margem à esquerda para espaçamento */
-  border: none; /* Remover borda */
-  outline: none; /* Remover contorno ao focar */
-  caret-color: transparent; /* Remove o cursor */
+  width: 150px; 
+  margin-left: 10px; 
+  border: none; 
+  outline: none; 
+  caret-color: transparent; 
   margin-left: 90px;
   margin-top: -20px;
 }

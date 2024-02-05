@@ -20,14 +20,14 @@ function Tela2() {
             <div class="row">
             <p className="informe-texto">Informe o endereço de e-mail cadastrado para receber o link de redefinição de senha.</p>
             </div>
-            <div class="row">
+            <div className="row">
               <img src={email} className="email" alt="email" />
               <p className="email-texto">Email</p>
             </div>
-            <div class="row">
+            <div className="row">
               <p className="line-4"></p>
             </div>
-            <div class="row">
+            <div className="row">
               <button className="botao-enviar" onClick={handleClick}>
                 <p className="enviar-texto" onClick={handleClick}>
                   ENVIAR
