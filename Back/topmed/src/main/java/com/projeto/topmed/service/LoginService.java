@@ -1,5 +1,6 @@
 package com.projeto.topmed.service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +30,7 @@ public class LoginService {
         ultimoLoginFeito= obterUltimoLoginDoUsuario(usuario.getUsername());
 
         if (ultimoLoginFeito != null) {
-            if (ultimoLoginFeito.getNumeroTentativas().equals(3)) {
+            if (ultimoLoginFeito.getNumeroTentativas().equals(3) && ultimoLoginFeito.getDiaHoraLogin().isAfter(LocalDateTime.now().minusMinutes(20))) {
                 return true;
             } else {
                 return false;
@@ -47,6 +48,19 @@ public class LoginService {
             return logins.get(0);
         }
 
+        return null;
+    }
+
+    public LocalDateTime obterUltimoLoginRecusado(String username) {
+        List<DadosLogin> logins = loginRepository.findByUsernameOrderByDiaHoraLoginDesc(username);
+
+        if(!logins.isEmpty()){
+            for (DadosLogin login : logins) {
+                if ("Recusado".equals(login.getStatusLogin())) {
+                    return login.getDiaHoraLogin();
+                }
+            }
+        }
         return null;
     }
     

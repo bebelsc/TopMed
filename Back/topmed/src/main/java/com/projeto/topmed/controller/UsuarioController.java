@@ -59,35 +59,37 @@ public class UsuarioController {
         String username = loginRequest.get("username");
         String senha = loginRequest.get("senha");
         ObjectMapper objectMapper = new ObjectMapper();
-
         int tentativas=0;
 
-        // verifica se os campos foram preenchidos
+        // se algum dos campos forem nulos
         if (username == null || senha == null) {
             JsonNode errorResponse = objectMapper.createObjectNode().put("error", "Preencha os campos corretamente");
-
             return ResponseEntity.status(403).body(errorResponse.toString());
         }
-        
 
         //verifica no bd de qual usuario são os dados
         Usuario usuario = usuarioService.procurarPorUsername(username);
 
-        // Verifica se o usuário está bloqueado
-        if (loginService.loginBloqueado(usuario)) {
-            JsonNode errorResponse = objectMapper.createObjectNode().put("error", "Usuário bloqueado devido a múltiplas tentativas incorretas.");
-
-            return ResponseEntity.status(403).body(errorResponse.toString());
-        }
-
         //Verifica o ultimo login do username
         DadosLogin ultimoLoginFeito = loginService.obterUltimoLoginDoUsuario(username);
-        tentativas= ultimoLoginFeito.getNumeroTentativas(); 
-        LocalDateTime ultimaTentativaBloqueio = ultimoLoginFeito.getDiaHoraLogin();  
+        if(ultimoLoginFeito!=null){
+            tentativas= ultimoLoginFeito.getNumeroTentativas(); 
+        }
+        else{
+            tentativas=0;
+        }
+       
+
          //verifica se a senha e usuario sao compativeis
          Boolean verificacao= usuarioService.verificaDados(username, senha, usuario);
 
-        //se sim, faz o login
+        // Verifica se o usuário está bloqueado, se estiver ele avisa 
+        if (loginService.loginBloqueado(usuario)) {
+            JsonNode errorResponse = objectMapper.createObjectNode().put("error", "Usuário bloqueado devido a múltiplas tentativas incorretas.");
+            return ResponseEntity.status(403).body(errorResponse.toString());
+        }
+
+        //faz a verificacao do usuario e se os dados estiverem corretos ele entra
         if (verificacao)
         {
             tentativas=0;
@@ -99,6 +101,10 @@ public class UsuarioController {
             return ResponseEntity.status(200).body(successResponse.toString());
         }   
 
+        
+        //achar ultima tentativa de bloqueio
+        LocalDateTime ultimaTentativaBloqueio = loginService.obterUltimoLoginRecusado(username);  
+
         if (tentativas < MAX_TENTATIVAS) {
             tentativas++;
             status = "Recusado";
@@ -106,12 +112,12 @@ public class UsuarioController {
         } else {
             // Bloqueia o usuário se o número de tentativas exceder o limite
             if (LocalDateTime.now().minusMinutes(MAX_TENTATIVAS_TEMPO_MINUTOS).isAfter(ultimaTentativaBloqueio)) {
-                return ResponseEntity.status(403).body("Usuário bloqueado devido a múltiplas tentativas incorretas.");
+                JsonNode errorResponse = objectMapper.createObjectNode().put("error", "Usuário bloqueado devido a múltiplas tentativas incorretas.");
+                return ResponseEntity.status(403).body(errorResponse.toString());
             }
         }
 
-        JsonNode errorResponse = objectMapper.createObjectNode().put("error", "Login incorreto. Tentativas restantes: ");
-
+        JsonNode errorResponse = objectMapper.createObjectNode().put("error", "Login incorreto");
         return ResponseEntity.status(403).body(errorResponse.toString());
     }
     

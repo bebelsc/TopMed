@@ -7,38 +7,47 @@ function Tela5() {
   };
 
   return (
-    <div className="Tela5">
       <header className="Tela5-header">
 
         <div className="modal-container">
-          <div className="modal-verde">
-            <p className="redefinicao-texto">Redefinição de senha</p>
 
+        <div className="column">
+          <div className="modal-verde">
+            <div className='row'>
+              <p className="redefinicao-texto">Redefinição de senha</p>
+            </div>
           </div>
 
           <div className="modal-branco">
-            <p className="texto-1">Olá, 
+            <div className='row'>
+                <p className="texto-1">Olá, 
+                  Recebemos sua solicitação de redefinição de senha do Consultório Pró.
 
-            Recebemos sua solicitação de redefinição de senha do Consultório Pró.
-
-            Clique no botão abaixo para redefinir sua senha.</p>
-
-            <button className="botao-redefinir" onClick={handleClick}>
-              <p className="texto-botao" onClick={handleClick}>
-                REDEFINIR SENHA
-              </p>
-            </button>
-
-            <p className="texto-2">Esta deve ser uma senha de acesso exclsuiva do usuário, que não deve ser compartilhada com terceiros.
-            
-            Se necessário, a senha pode ser alterada posteriormente através do menu “Alterar minha senha” no Consultório Pró.</p>
-
-            <img src={topmed_logo} className="topmed-logo" alt="topmed_logo" />
+                  Clique no botão abaixo para redefinir sua senha.</p>
+            </div>
+            <div className='row'>
+              <button className="botao-redefinir" onClick={handleClick}>
+                <p className="texto-botao">
+                  REDEFINIR SENHA
+                </p>
+              </button>
+            </div>
+            <div className='row'>
+              <p className="texto-2">Esta deve ser uma senha de acesso exclsuiva do usuário, que não deve ser compartilhada com terceiros.
+              
+              Se necessário, a senha pode ser alterada posteriormente através do menu “Alterar minha senha” no Consultório Pró.</p>
+            </div>
+            <div className='row'>
+              <img src={topmed_logo} className="topmed-logo2" alt="topmed_logo" />
+            </div>
           </div>
+        </div>
+          
+
+          
         </div>
 
       </header>
-    </div>
   );
 }
 

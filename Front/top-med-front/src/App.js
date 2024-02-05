@@ -6,6 +6,7 @@ import nextplus_logo from './nextplus-logo.png'
 import ondas from './ondas.jpg'
 import camera from './camera.png'
 import Popup from './Popup';
+
 import './App.css';
 
 function App() {
@@ -13,6 +14,13 @@ function App() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [showPopup, setShowPopup] = useState(false);
+  const [popupMessage, setPopupMessage] = useState('');
+
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+    setPopupMessage('');
+  };
 
   const handleClick = async () => {
     try {
@@ -27,24 +35,25 @@ function App() {
         }),
       });
   
-      if (response.status==200) {
+      if (response.status===200) {
         const data = await response.json();
         console.log('Sucesso:', data);
         // Faça algo com a resposta do backend em caso de sucesso
+        setPopupMessage('Login realizado com sucesso');
         setShowPopup(true);
       } else {
         const errorData = await response.json();
         console.error('Erro:', errorData.error);
         // Faça algo em caso de erro
+        setPopupMessage(`Erro: ${errorData.error}`);
+        setShowPopup(true);
       }
     } catch (error) {
       console.error('Erro:', error);
+      setPopupMessage('Erro inesperado');
+      setShowPopup(true);
     }
   };  
-
-  const closePopup = () => {
-    setShowPopup(false);
-  };
 
   return (
       <header className="App-header">
@@ -92,7 +101,7 @@ function App() {
             </div>
             <div className="row">
               <button className="Botao_entrar" onClick={handleClick}>
-                <p className="entrar-texto" onClick={handleClick}>
+                <p className="entrar-texto">
                   ENTRAR
                 </p>
               </button>
@@ -115,7 +124,7 @@ function App() {
             <img src={camera} className="camera" alt="camera" />
             <div className="row">
               <button className="Botao_teste" onClick={handleClick}>
-                <p className="realizar-teste-texto" onClick={handleClick}>
+                <p className="realizar-teste-texto">
                   Realizar Teste
                 </p>
               </button>
@@ -126,7 +135,7 @@ function App() {
           </div>
         </div>
 
-        {showPopup && <Popup message="Login realizado com sucesso" onClose={closePopup} />}
+        {showPopup && <Popup message={popupMessage} onClose={handleClosePopup} />}
       </header>
   );
 }

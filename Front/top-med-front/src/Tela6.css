@@ -12,27 +12,24 @@
 }
   
 .modal-branco{
-    width: 497px;
-    height: 332px;
-    top: 121px;
-    left: 470px;
-    border-radius: 11.48px, 11.48px, 11.48px, 11.48px;
-  
+    width: 284px;
+    height: 339px;
+    top: 61px;
+    left: 578px;
+    border-radius: 11.48px 11.48px 11.48px 11.48px;
+
     box-shadow: 3.061890125274658px 3.061890125274658px 3.061890125274658px 3.061890125274658px #00000038;
   
     background: #FFFBFB;
 }
 
 .redefinicao-texto{
-    width: 208px;
+    width: 300px;
     height: 26px;
-    top: 104px;
-    left: 620px;
+    margin-top: 20px;
+    margin-left: 45px;
 
-    font-family: Almarai;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
 
@@ -42,7 +39,7 @@
 .linha{
     width: 199px;
     top: 187px;
-    left: 620px;
+    margin-left: 45px;
     border: 1px;
     
     color: #00000038;
@@ -54,9 +51,8 @@
     width: 64px;
     height: 17px;
     top: 166px;
-    left: 648px;
+    margin-left: 40px;
 
-    font-family: Alata;
     font-size: 11px;
     font-weight: 400;
     line-height: 15px;
@@ -67,7 +63,7 @@
 }
 
 .icone1{
-    width: 12px;
+    width: 22px;
     height: 16px;
     top: 166px;
     left: 627px;
@@ -97,14 +93,10 @@
 .texto-botao1{
     width: 81px;
     height: 13px;
-    top: 268px;
-    left: 683px;
+    margin-top: 5px;
+    margin-left: 15px;
 
-    font-family: Alata;
     font-size: 10px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0em;
     text-align: left;
 
     color: #FFFFFF;
@@ -113,13 +105,10 @@
 .texto-botao2{
     width: 43px;
     height: 13px;
-    top: 305px;
-    left: 702px;
+    margin-top: 5px;
+    margin-left: 32px;
 
-    font-family: Alata;
     font-size: 10px;
-    font-weight: 400;
-    line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
 

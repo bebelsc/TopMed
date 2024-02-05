@@ -10,40 +10,51 @@ function Tela6() {
   };
 
   return (
-    <div className="Tela6">
       <header className="Tela6-header">
 
         <div className="modal-container">
           <div className="modal-branco">
-            <p className="redefinicao-texto">Redefinição de senha</p>
-
-            <div className="linha">
-              <img src={icone1} className="icone1" alt="icone1" />
-              <p className="usuario-texto">Nova senha</p>
+            <div className='row'>
+              <p className="redefinicao-texto">Redefinição de senha</p>
             </div>
-            <div className="linha">
-              <img src={icone2} className="icone2" alt="icone2" />
-              <p className="usuario-texto">Confirme a nova senha</p>
+            <div className='row'>
+                <img src={icone1} className="icone1" alt="icone1" />
+                <p className="usuario-texto">Nova senha</p>
             </div>
-
-            <button className="botao-redefinir" onClick={handleClick}>
-              <p className="texto-botao1" onClick={handleClick}>
-                REDEFINIR SENHA
-              </p>
-            </button>
-            <button className="botao-cancelar" onClick={handleClick}>
-              <p className="texto-botao2" onClick={handleClick}>
-                Cancelar
-              </p>
-            </button>
-
-            <img src={nextplus_logo} className="nextplus-logo" alt="nextplus_logo" />
-            <img src={topmed_logo} className="topmed-logo" alt="topmed_logo" />
+            <div className='row'>
+              <p className="linha"></p>
+            </div>
+            <div className='row'>
+                <img src={icone2} className="icone2" alt="icone2" />
+                <p className="usuario-texto">Confirme a nova senha</p>
+            </div>
+            <div className='row'>
+              <p className="linha"></p>
+            </div>
+            <div className='row'>
+              <button className="botao-redefinir" onClick={handleClick}>
+                <p className="texto-botao1" onClick={handleClick}>
+                  REDEFINIR SENHA
+                </p>
+              </button>
+            </div>
+            <div className='row'>
+              <button className="botao-cancelar" onClick={handleClick}>
+                <p className="texto-botao2" onClick={handleClick}>
+                  Cancelar
+                </p>
+              </button>
+            </div>
+            <div className='row'>
+              <div  style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+                <img src={topmed_logo} className="TopMed-logo" alt="topmed_logo" style={{ gridColumn: '1',marginRight: '10px' }} />
+                <img src={nextplus_logo} className="nextplus-logo" alt="nextplus_logo" style={{ gridColumn: '2' }} />
+              </div>
+            </div>
           </div>
         </div>
 
       </header>
-    </div>
   );
 }
 
